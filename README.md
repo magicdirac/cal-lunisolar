@@ -1,12 +1,12 @@
 ## Introduction
 
-`cal-lunisolar` is a GNU Emacs package for the Traditional East Asian lunisolar calendar. Emacs version of localization for China, Korea, Vietnam, and Japan and countries in the East Asian cultural sphere. — Edit
+`cal-lunisolar` is a GNU Emacs package for the Traditional East Asian lunisolar calendar. Emacs version of localization for China, Korea, Vietnam, and Japan and countries in the East Asian cultural sphere.
 
-The package is still under-develepment. 
+The package is still under-develepment.
 
 ## Configuration overview
 
-### add path of this package to your `load-path
+### add path of this package to your `load-path`
 ```elisp
 (add-to-list 'load-path
 	     "path/to/the/directory/of/cal-lunisolar")
@@ -19,12 +19,12 @@ then simply `require` the package
 ### A few customizations are provided.
 
 #### Control wheather showing lunar date or celestial-terrestrial date
-> show lunar date 
+> show lunar date
 ```elisp
 (setq cal-lunisolar-display-lunar t)  ;; show lunar date in the buffer.
 ```
-> or show celestial-terrestrial date
 
+> or show celestial-terrestrial date
 ```elisp
 (setq cal-lunisolar-display-lunar nil)  ;; show celestial-terrestrial date in the buffer.
 ```
@@ -33,10 +33,11 @@ then simply `require` the package
 
 For aligning CJK and ASCII font, [chinese-fonts-setup](https://github.com/tumashu/chinese-fonts-setup) may be helpful.
 
-> If you have  installed [chinese-fonts-setup](https://github.com/tumashu/chinese-fonts-setup), 
+> If you have  installed [chinese-fonts-setup](https://github.com/tumashu/chinese-fonts-setup), and configured correctly.
 ```elisp
-(setq cal-lunisolar-force-align nil)  ;; default 
+(setq cal-lunisolar-force-align nil)  ;; default
 ```
+
 > If you have not installed [chinese-fonts-setup](https://github.com/tumashu/chinese-fonts-setup), you can set `cal-lunisolar-force-align` to `t` which will try to align the date entries. Currently I have assumed there are only 2 CJK characters in each date entry.
 ```elisp
 (setq cal-lunisolar-force-align t)
